@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>mEd RAJAWI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="BOUNAKHLA Mohammed">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="navbar">
+    <ul>
+      <li><a href="#history">Histoire</a></li>
+      <li><a href="#trophies">Trophées</a></li>
+      <li><a href="#players">Joueurs</a></li>
+      <li><a href="#pronostics">Pronostics</a></li>
+      <li><a href="#akhbar">Actualités</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>Raja Club Athletic</h1>
+    <p>Fierté du peuple • Légende du football africain • الرجاء العالمي</p>
+    <button onclick="scrollToSection('trophies')">Découvrir</button>
+  </div>
+</header>
+
+<section id="history" class="section">
+  <h2>📜 Histoire du Club</h2>
+  <p>
+    Fondé en 1949, le Raja Casablanca est l’un des plus grands clubs d’Afrique,
+    connu pour son public exceptionnel et son style de jeu Tiki Taka (Drayba).
+  </p>
+</section>
+
+<section id="trophies" class="section green">
+  <h2>🏆 Trophées</h2>
+  <div class="grid">
+    <div class="card">13 Botola Pro</div>
+    <div class="card">3 Ligue des Champions CAF</div>
+    <div class="card">9 Coupe du Trône</div>
+    <div class="card">2 Super Coupe d’Afrique</div>
+    <div class="card">Finaliste Coupe du Monde des Clubs 2013</div>
+    <div class="card">2 Coupe de la Confédération</div>
+    <div class="card">Coupe Afro-Asiatique</div>
+    <div class="card">2 Ligue des Champions Arabes</div>
+  </div>
+</section>
+
+<section id="players" class="section">
+  <h2>⭐ Joueurs légendaires</h2>
+  <div class="grid">
+    <div class="player-card">
+      <h3>Salahdine Bassir</h3>
+      <p>Attaquant légendaire</p>
+    </div>
+    <div class="player-card">
+      <h3>Abdelmajid Dolmy</h3>
+      <p>Icône du Raja – Milieu défensif</p>
+    </div>
+    <div class="player-card">
+      <h3>Mouhcine Moutouali</h3>
+      <p>Capitaine historique</p>
+    </div>
+  </div>
+</section>
+
+<section id="pronostics" class="section">
+  <h2>🔮 Pronostic du Prochain Match</h2>
+
+  <div class="pronostic-simple">
+    <h3>Raja Casablanca vs Union Touarga Sports</h3>
+
+    <div class="score-display">
+      <div class="team-score">
+        <span class="team-name">RAJA</span>
+        <span id="score-raja" class="score">?</span>
+      </div>
+
+      <span class="vs">-</span>
+
+      <div class="team-score">
+        <span id="score-adv" class="score">?</span>
+        <span class="team-name">Touarga</span>
+      </div>
+    </div>
+
+    <button class="random-btn" onclick="generateRandomScore()">🎲 Générer Score</button>
+    <p id="result-message" class="result-message"></p>
+  </div>
+</section>
+
+<section id="akhbar" class="section">
+  <h2>📰 Actualités</h2>
+  <ul class="news-list">
+    <li>🟢 Amine Khammas signe avec le Raja jusqu’en 2029</li>
+    <li>⚽ Match Raja – Ittihad Touarga confirmé</li>
+    <li>🤝 Coca-Cola Maroc partenaire officiel</li>
+  </ul>
+</section>
+
+<section id="gallery" class="section green">
+  <h2>📸 Galerie</h2>
+  <div class="gallery-grid">
+    <img src="https://cdn.snrtnews.com/sites/default/files/2024/05/25/raja-vs-asfar-15-1716638117.jpeg">
+    <img src="https://i0.wp.com/thesefootballtimes.co/wp-content/uploads/2015/07/vaqgh.jpg?fit=2048%2C1261&ssl=1">
+    <img src="https://media.afrik-foot.com/main/2012/08/Raja_Casablanca.jpg" alt="trophy">
+    <img src="https://cdn.snrtnews.com/sites/default/files/2022/05/06/whatsapp-image-2022-05-06-at-21-1651874112.jpeg"> 
+    <img src="https://www.radiofrance.fr/s3/cruiser-production/2020/08/ee081c24-4ed4-40d4-a0f2-449258d0deb7/1200x680_000_1mj17a.jpg"> 
+    <img src="https://sport.le360.ma/resizer/fcBD9vrJ6Ohh0I5IzcRTOJTK6MI=/arc-photo-le360/eu-central-1-prod/public/7B4BPPSSGRNSJNHOYJVOY7PD64.jpg">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>📬 Contact</h2>
+  <form>
+    <input type="text" placeholder="Nom" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="0721566512" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Raja Casablanca | mon premier site web 💚</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
