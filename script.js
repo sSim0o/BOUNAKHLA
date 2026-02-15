@@ -36,7 +36,7 @@ const form = document.getElementById('contactForm');
     };
 
     try {
-      const res = await fetch("https://formspree.io/f/mzdarvwq", {
+      const res = await fetch("https://formspree.io/f/xeelgzwb, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
