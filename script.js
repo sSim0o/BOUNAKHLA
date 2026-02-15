@@ -24,3 +24,31 @@ function scrollToSection(id) {
      } 
     });
   });
+const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    try {
+      const res = await fetch("https://formspree.io/f/mzdarvwq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (res.ok) {
+        alert("Message envoyé ✅");
+        form.reset();
+      } else {
+        alert("Erreur ❌ : vérifie ton formulaire et ton Formspree ID");
+      }
+    } catch (err) {
+      alert("Erreur réseau ❌");
+    }
+  });
