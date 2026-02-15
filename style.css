@@ -58,7 +58,7 @@ a {
 
 .hero {
     height: 100vh;
-    background: url('https://i.pinimg.com/736x/9d/fc/2f/9dfc2f3fe509ed31b56999ac4ffcd148.jpg') center/cover no-repeat fixed;
+    background: url('img1.jpg') center/cover no-repeat fixed;
     position: relative;
     display: flex;
     align-items: center;
