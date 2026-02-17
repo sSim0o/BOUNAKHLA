@@ -1,3 +1,6 @@
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 function generateRandomScore() {
   r = Math.floor(Math.random() * 5);
   w = Math.floor(Math.random() * 3);
