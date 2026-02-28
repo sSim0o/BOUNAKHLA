@@ -2,8 +2,8 @@ function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 function generateRandomScore() {
-  r = Math.floor(Math.random() * 5);
-  w = Math.floor(Math.random() * 3);
+  r = Math.floor(Math.random() * 8);
+  w = Math.floor(Math.random() * 4);
 
   document.getElementById('score-raja').textContent = r;
   document.getElementById('score-adv').textContent = w;
